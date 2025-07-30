@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartzilla</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Bar -->
+        <div class="bg-light py-2 border-bottom">
+            <div class="container d-flex justify-content-between align-items-center small">
+                <div>
+                    <i class="bi bi-telephone me-2"></i>Need help? Call us: +1 (234) 567-890
+                </div>
+                <div>
+                    <i class="bi bi-gift-fill text-warning me-1"></i>20% off on your first order
+                </div>
+                <div>
+                    <i class="bi bi-translate me-1"></i>EN | <strong class="ms-2">$</strong> USD
+                </div>
+            </div>
+        </div>
+
+        <!-- Center Bar -->
+        <div class="bg-white py-3 border-bottom">
+            <div class="container d-flex justify-content-between align-items-center">
+
+                <a href="#" class="text-decoration-none text-dark fs-4 fw-bold">NiceShop</a>
+
+
+                <form class="d-flex w-50" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for products"
+                        aria-label="Search">
+                    <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+
+                <div class="d-flex gap-3 align-items-center">
+                    <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+                    <a href="#" class="text-dark">
+                        <i class="bi bi-heart"></i>
+                    </a>
+                    <a href="#" class="text-dark">
+                        <i class="bi bi-cart3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🔹 Menu Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Category</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Product Details</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Checkout</a></li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Megamenu 1</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                                <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Megamenu 2</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Submenu A</a></li>
+                                <li><a class="dropdown-item" href="#">Submenu B</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div>
+                            <h1 class="hero-heading mb-3">Discover Amazing Products</h1>
+                            <p class="mb-5">Explore our curated collection of premium items designed to enhance your
+                                lifestyle. From
+                                fashion to tech, find everything you need with exclusive deals and fast shipping.</p>
+                            <div class="d-flex gap-3 mb-5">
+                                <div>
+                                    <a class="btn btn-dark p-3" href="">Shop Now</a>
+                                </div>
+                                <div>
+                                    <a class="btn btn-light p-3" href="">Browse Categories</a>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 fs-5">
+                                <div>
+                                    <i class="bi bi-truck"></i> <span>Free Shipping</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-award"></i> <span>Quality Guarantee</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-headset"></i> <span>24/7 Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center position-relative">
+                        <div>
+                            <div class="card bg-white rounded-5 border-0" style="width: 400px;">
+                                <img src="./img/hero-chair.webp" class="card-img-top" alt="...">
+                                <div class="card-body ms-3">
+                                    <h4>Premium Wireless Headphones</h4>
+                                    <div>
+                                        <span class="fw-bold fs-5"><del>$399</del></span>
+                                        <span>$299</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Small Boxs -->
+                        <div class="position-absolute s-box-p">
+                            <div class="s-box mb-4 shadow-sm" data-aos="zoom-in" data-aos-delay="400">
+                                <img class="img img-fluid" src="./img/product-3.webp" alt="">
+                                <span>$89</span>
+                            </div>
+                            <div class="s-box shadow-sm" data-aos="zoom-in" data-aos-delay="400">
+                                <img class="img img-fluid" src="./img/product-5.webp" alt="">
+                                <span>$149</span>
+                            </div>
+                        </div>
+
+                        <!-- Small Icons Boxs -->
+                        <div class="s-icon shadow-lg si-1" data-aos="fade-up" data-aos-delay="600">
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                        <div class="s-icon shadow-lg si-2" data-aos="fade-up" data-aos-delay="700">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <div class="s-icon shadow-lg si-3" data-aos="fade-up" data-aos-delay="800">
+                            <i class="bi bi-search"></i>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+
+    <main>
+
+
+
+
+
+        <div class="container my-5">
+            <div class="row">
+                <!-- Left Side-->
+                <div class="col-md-6 bg-light p-4 rounded-4">
+                    <div class="row">
+                        <div class="col-md-6 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="badge bg-secondary mb-2 px-3 py-2">TRENDING NOW</span>
+                                <h2 class="fw-bold">New<br>Summer<br>Collection</h2>
+                                <p class="text-muted">
+                                    Discover our latest arrivals <br> designed for the modern lifestyle. <br> Elegant,
+                                    comfortable, and <br>sustainable fashion for every <br> occasion.
+                                </p>
+                            </div>
+                            <a class="btn btn-dark rounded-5 py-3">
+                                Explore Collection →
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="./img/product-f-2.webp" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-md-6">
+                    <div class="row g-3">
+                        <!--Men's Wear -->
+                        <div class="col-6">
+                            <div class="bg-info bg-opacity-10 p-3 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5 class="fw-bold">Men's Wear</h5>
+                                        <p class="text-muted mb-1">242 products</p>
+                                        <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                                    </div>
+                                    <img src="./img/product-m-5.webp" alt="Men" class="img-fluid"
+                                        style="max-width: 160px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Kid's Fashion -->
+                        <div class="col-6">
+                            <div class="bg-warning bg-opacity-10 p-3 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5 class="fw-bold">Kid's Fashion</h5>
+                                        <p class="text-muted mb-1">185 products</p>
+                                        <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                                    </div>
+                                    <img src="./img/product-8.webp" alt="Kids" class="img-fluid"
+                                        style="max-width: 160px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Beauty Products -->
+                        <div class="col-6">
+                            <div class="bg-danger bg-opacity-10 p-3 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5 class="fw-bold">Beauty Products</h5>
+                                        <p class="text-muted mb-1">127 products</p>
+                                        <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                                    </div>
+                                    <img src="./img/product-3 (1).webp" alt="Beauty" class="img-fluid"
+                                        style="max-width: 160px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Accessories -->
+                        <div class="col-6">
+                            <div class="bg-success bg-opacity-10 p-3 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5 class="fw-bold">Accessories</h5>
+                                        <p class="text-muted mb-1">308 products</p>
+                                        <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                                    </div>
+                                    <img src="./img/product-12.webp" alt="Accessories" class="img-fluid"
+                                        style="max-width: 160px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
