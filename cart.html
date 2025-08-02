@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>About</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,13 +14,12 @@
 <body>
 
     <section>
-
-        <!-- top bar -->
+        <!-- top -->
         <div class="bg-light py-2">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
-                        <h2>Contact</h2>
+                        <h2>Cart</h2>
                     </div>
                     <div>
                         <nav aria-label="breadcrumb">
@@ -28,101 +27,126 @@
                                 <li class="breadcrumb-item active" aria-current="page"><a
                                         class="text-decoration-none text-dark" href="./index.html">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page"><a
-                                        class="text-decoration-none text-dark" href="./contact.html">About</a></li>
+                                        class="text-decoration-none text-dark" href="./about.html">Cart</a></li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- cards -->
-        <div class="container">
-            <div class="row gy-4 my-5">
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center justify-content-center gray p-5 rounded-4 custom-hover">
-                        <div class="me-3">
-                            <i class="bi bi-geo-alt fs-2"></i>
-                        </div>
-                        <div>
-                            <h4 class="m-0 p-0">Adress</h4>
-                            <p class="m-0 p-0">Lorem ipsum dolor recusandae!</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center justify-content-center gray p-5 rounded-4 custom-hover">
-                        <div class="me-3">
-                            <i class="bi bi-envelope fs-2"></i>
-                        </div>
-                        <div>
-                            <h4 class="m-0 p-0">Email Address</h4>
-                            <p class="m-0 p-0">info@example.com</p>
-                        </div>
-                    </div>
-                </div>
+        
+    <div class="container my-5">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Product 1 -->
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./img/product-10.webp" class="product-image me-3">
+                                </div>
+                                <div style="width: 200px;">
+                                    <h6 class="mb-1">Lorem ipsum dolor sit amet</h6>
+                                    <small>Color: Black | Size: M</small>
+                                    <div>
+                                        <a href="#" class="text-danger small text-decoration-none"><i class="bi bi-trash"></i> Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$89.99</td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-outline-secondary btn-sm">-</button>
+                                <input type="text" class="form-control text-center mx-1" value="1" style=" width:50px">
+                                <button class="btn btn-outline-secondary btn-sm">+</button>
+                            </div>
+                        </td>
+                        <td>$89.99</td>
+                    </tr>
 
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center justify-content-center gray p-5 rounded-4 custom-hover">
-                        <div class="me-3">
-                            <i class="bi bi-headset fs-2"></i>
-                        </div>
-                        <div>
-                            <h4 class="m-0 p-0">Hours of Operation</h4>
-                            <p class="m-0 p-0">Sunday-Fri: 9 AM - 6 PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+                    <!-- Product 2 -->
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./img/product-8.webp" class="product-image me-3">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Lorem ipsum dolor sit amet</h6>
+                                    <small>Color: Black | Size: M</small>
+                                    <div>
+                                        <a href="#" class="text-danger small text-decoration-none"><i class="bi bi-trash"></i> Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$64.99 <del class="text-muted">$79.99</del></td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-outline-secondary btn-sm">-</button>
+                                <input type="text" class="form-control text-center mx-1" value="2" style=" width:50px">
+                                <button class="btn btn-outline-secondary btn-sm">+</button>
+                            </div>
+                        </td>
+                        <td>$129.99</td>
+                    </tr>
+                    <!-- Product 3 -->
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./img/product-7.webp" class="product-image me-3">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Lorem ipsum dolor sit amet</h6>
+                                    <small>Color: Black | Size: M</small>
+                                    <div>
+                                        <a href="#" class="text-danger small text-decoration-none"><i class="bi bi-trash"></i> Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$49.99</td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-outline-secondary btn-sm">-</button>
+                                <input type="text" class="form-control text-center mx-1" value="1" style=" width:50px">
+                                <button class="btn btn-outline-secondary btn-sm">+</button>
+                            </div>
+                        </td>
+                        <td>$49.99</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-    </section>
-
-    <main>
-        <section id="contact-form">
-            <div class="container-fluid">
-                <div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27768.903958891282!2d71.627628!3d29.5422035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b9efa924647d5%3A0x8ea33d2b8a377e7a!2sDistrict%20Lodhran!5e0!3m2!1sen!2s!4v1754113569510!5m2!1sen!2s"
-                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="container" data-aos="fade-up">
-                    <div class="contact-form card border-0 shadow-lg p-4" style="margin-top: -250px;">
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="name" >Your Name</label>
-                                    <input type="text" class="form-control" id="name" required />
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="email" >Your Email</label>
-                                    <input type="email" class="form-control" id="email" required />
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="subject" >Subject</label>
-                                <input type="text" class="form-control" id="subject" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" >Message</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-dark">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
+        <!-- Buttons -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center mt-4">
+            <div class="mb-2">
+                <input type="text" class="form-control d-inline-block w-auto" placeholder="Coupon code">
+                <button class="btn btn-dark ms-2">Apply Coupon</button>
             </div>
-        </section>
-    </main>
+            <div>
+                <button class="btn btn-outline-dark me-2">Update Cart</button>
+                <button class="btn btn-danger">Clear Cart</button>
+            </div>
+        </div>
+    </div>
 
 
 
-
-
+    </section>
 
 
 

@@ -27,17 +27,21 @@ header {
     top: 80px;
     right: 45px;
 }
-.move{
+
+.move {
     animation: move 2s ease infinite alternate;
 }
+
 @keyframes move {
-    from{
+    from {
         transform: translateY(0px);
     }
-    to{
+
+    to {
         transform: translateY(-20px);
     }
 }
+
 .s-icon {
     background-color: white;
     height: 60px;
@@ -83,7 +87,9 @@ header {
 #trending {
     padding: 0px 0px 100px;
 }
-#Flash-Sale{ padding: 100px 0px;
+
+#Flash-Sale {
+    padding: 100px 0px;
 
 }
 
@@ -96,6 +102,34 @@ header {
     box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.175);
 }
 
-.gray{ background-color: #e9e7e7;}
-.round-img{ height: 50px; width: 50px; border-radius: 100%;}
-#Testimonial{padding: 100px 0px;}
+.gray {
+    background-color: #e9e7e7;
+}
+
+.round-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+#Testimonial {
+    padding: 100px 0px;
+}
+
+#contact-form {
+    padding: 100px 0px;
+}
+
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 16px;
+    border: 1px solid rgba(128, 128, 128, 0.289);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
