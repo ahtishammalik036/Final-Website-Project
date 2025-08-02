@@ -27,7 +27,17 @@ header {
     top: 80px;
     right: 45px;
 }
-
+.move{
+    animation: move 2s ease infinite alternate;
+}
+@keyframes move {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}
 .s-icon {
     background-color: white;
     height: 60px;
@@ -38,6 +48,54 @@ header {
     align-items: center;
     position: absolute;
 }
-.si-1{ top: 100px; left: 20px;}
-.si-2{ top: 300px; left: 20px;}
-.si-3{ top: 200px; right: -50px;}
+
+.si-1 {
+    top: 100px;
+    left: 20px;
+}
+
+.si-2 {
+    top: 300px;
+    left: 20px;
+}
+
+.si-3 {
+    top: 200px;
+    right: -50px;
+}
+
+.hr-small {
+    border: 2px solid black;
+    opacity: 100%;
+    width: 50px;
+    margin: 20px auto;
+}
+
+#Best-Sellers {
+    padding: 100px 0px 100px;
+}
+
+.trending-img {
+    height: 80px;
+    width: 80px;
+}
+
+#trending {
+    padding: 0px 0px 100px;
+}
+#Flash-Sale{ padding: 100px 0px;
+
+}
+
+.custom-hover {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.custom-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.175);
+}
+
+.gray{ background-color: #e9e7e7;}
+.round-img{ height: 50px; width: 50px; border-radius: 100%;}
+#Testimonial{padding: 100px 0px;}

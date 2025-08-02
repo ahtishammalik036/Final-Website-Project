@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartzilla</title>
+    <title>NiceShop</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <header>
         <!-- Top Bar -->
         <div class="bg-light py-2 border-bottom">
-            <div class="container d-flex justify-content-between align-items-center small">
+            <div class="container d-flex justify-content-between align-items-center">
                 <div>
                     <i class="bi bi-telephone me-2"></i>Need help? Call us: +1 (234) 567-890
                 </div>
@@ -65,7 +65,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Category</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Product Details</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
@@ -100,7 +100,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -110,21 +110,22 @@
         <section>
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
+                    <!-- Left -->
+                    <div class="col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
                         <div>
                             <h1 class="hero-heading mb-3">Discover Amazing Products</h1>
                             <p class="mb-5">Explore our curated collection of premium items designed to enhance your
                                 lifestyle. From
                                 fashion to tech, find everything you need with exclusive deals and fast shipping.</p>
-                            <div class="d-flex gap-3 mb-5">
+                            <div class="d-flex gap-3 mb-5" data-aos="fade-up" data-aos-delay="200">
                                 <div>
                                     <a class="btn btn-dark p-3" href="">Shop Now</a>
                                 </div>
                                 <div>
-                                    <a class="btn btn-light p-3" href="">Browse Categories</a>
+                                    <a class="btn btn-light p-3 " href="">Browse Categories</a>
                                 </div>
                             </div>
-                            <div class="d-flex gap-3 fs-5">
+                            <div class="d-flex gap-3 mb-5" data-aos="fade-up">
                                 <div>
                                     <i class="bi bi-truck"></i> <span>Free Shipping</span>
                                 </div>
@@ -137,9 +138,10 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Right -->
                     <div class="col-md-6 d-flex justify-content-center align-items-center position-relative">
                         <div>
-                            <div class="card bg-white rounded-5 border-0" style="width: 400px;">
+                            <div class="card bg-white rounded-5 border-0 custom-hover mb-5" style="width: 400px;">
                                 <img src="./img/hero-chair.webp" class="card-img-top" alt="...">
                                 <div class="card-body ms-3">
                                     <h4>Premium Wireless Headphones</h4>
@@ -163,13 +165,13 @@
                         </div>
 
                         <!-- Small Icons Boxs -->
-                        <div class="s-icon shadow-lg si-1" data-aos="fade-up" data-aos-delay="600">
+                        <div class="s-icon shadow-lg si-1 move" data-aos="fade-up" data-aos-delay="600">
                             <i class="bi bi-cart3"></i>
                         </div>
-                        <div class="s-icon shadow-lg si-2" data-aos="fade-up" data-aos-delay="700">
+                        <div class="s-icon shadow-lg si-2 move" data-aos="fade-up" data-aos-delay="700">
                             <i class="bi bi-heart"></i>
                         </div>
-                        <div class="s-icon shadow-lg si-3" data-aos="fade-up" data-aos-delay="800">
+                        <div class="s-icon shadow-lg si-3 move" data-aos="fade-up" data-aos-delay="800">
                             <i class="bi bi-search"></i>
                         </div>
 
@@ -188,111 +190,507 @@
 
     <main>
 
+        <!-- Categories Cards Section -->
 
-
-
-
-        <div class="container my-5">
-            <div class="row">
-                <!-- Left Side-->
-                <div class="col-md-6 bg-light p-4 rounded-4">
-                    <div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-between">
-                            <div>
-                                <span class="badge bg-secondary mb-2 px-3 py-2">TRENDING NOW</span>
-                                <h2 class="fw-bold">New<br>Summer<br>Collection</h2>
-                                <p class="text-muted">
-                                    Discover our latest arrivals <br> designed for the modern lifestyle. <br> Elegant,
-                                    comfortable, and <br>sustainable fashion for every <br> occasion.
-                                </p>
+        <section id="Categories">
+            <div class="container my-5">
+                <div class="row">
+                    <!-- Left Side-->
+                    <div class="col-md-6 bg-body-tertiary p-4 rounded-4" data-aos="fade-right">
+                        <div class="row">
+                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="badge bg-secondary mb-2 px-3 py-2">TRENDING NOW</span>
+                                    <h2 class="fw-bold">New<br>Summer<br>Collection</h2>
+                                    <p class="text-muted">
+                                        Discover our latest arrivals <br> designed for the modern lifestyle. <br>
+                                        Elegant,
+                                        comfortable, and <br>sustainable fashion for every <br> occasion.
+                                    </p>
+                                </div>
+                                <a class="btn btn-dark rounded-5 py-3">
+                                    Explore Collection →
+                                </a>
                             </div>
-                            <a class="btn btn-dark rounded-5 py-3">
-                                Explore Collection →
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid" src="./img/product-f-2.webp" alt="">
-                        </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="./img/product-f-2.webp" alt="">
+                            </div>
 
+                        </div>
                     </div>
-                </div>
 
-                <!-- Right Side -->
-                <div class="col-md-6">
-                    <div class="row g-3">
-                        <!--Men's Wear -->
-                        <div class="col-6">
-                            <div class="bg-info bg-opacity-10 p-3 rounded-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="fw-bold">Men's Wear</h5>
-                                        <p class="text-muted mb-1">242 products</p>
-                                        <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                    <!-- Right Side -->
+                    <div class="col-md-6">
+                        <div class="row g-3">
+                            <div class="col-md-6" data-aos="fade-up">
+                                <div class="bg-info bg-opacity-10 p-3 rounded-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="fw-bold">Men's Wear</h5>
+                                            <p class="text-muted mb-1">242 products</p>
+                                            <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                                        </div>
+                                        <img src="./img/product-m-5.webp" alt="Men" class="img-fluid"
+                                            style="max-width: 160px;">
                                     </div>
-                                    <img src="./img/product-m-5.webp" alt="Men" class="img-fluid"
-                                        style="max-width: 160px;">
                                 </div>
                             </div>
-                        </div>
-
-                        <!--Kid's Fashion -->
-                        <div class="col-6">
-                            <div class="bg-warning bg-opacity-10 p-3 rounded-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="fw-bold">Kid's Fashion</h5>
-                                        <p class="text-muted mb-1">185 products</p>
-                                        <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                            <div class="col-md-6" data-aos="fade-up">
+                                <div class="bg-warning bg-opacity-10 p-3 rounded-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="fw-bold">Kid's Fashion</h5>
+                                            <p class="text-muted mb-1">185 products</p>
+                                            <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                                        </div>
+                                        <img src="./img/product-8.webp" alt="Kids" class="img-fluid"
+                                            style="max-width: 160px;">
                                     </div>
-                                    <img src="./img/product-8.webp" alt="Kids" class="img-fluid"
-                                        style="max-width: 160px;">
                                 </div>
                             </div>
-                        </div>
-
-                        <!--Beauty Products -->
-                        <div class="col-6">
-                            <div class="bg-danger bg-opacity-10 p-3 rounded-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="fw-bold">Beauty Products</h5>
-                                        <p class="text-muted mb-1">127 products</p>
-                                        <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                            <div class="col-md-6" data-aos="fade-up">
+                                <div class="bg-danger bg-opacity-10 p-3 rounded-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="fw-bold">Beauty Products</h5>
+                                            <p class="text-muted mb-1">127 products</p>
+                                            <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                                        </div>
+                                        <img src="./img/product-3 (1).webp" alt="Beauty" class="img-fluid"
+                                            style="max-width: 160px;">
                                     </div>
-                                    <img src="./img/product-3 (1).webp" alt="Beauty" class="img-fluid"
-                                        style="max-width: 160px;">
                                 </div>
                             </div>
-                        </div>
-
-                        <!--Accessories -->
-                        <div class="col-6">
-                            <div class="bg-success bg-opacity-10 p-3 rounded-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="fw-bold">Accessories</h5>
-                                        <p class="text-muted mb-1">308 products</p>
-                                        <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                            <div class="col-md-6" data-aos="fade-up">
+                                <div class="bg-success bg-opacity-10 p-3 rounded-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="fw-bold">Accessories</h5>
+                                            <p class="text-muted mb-1">308 products</p>
+                                            <a href="#" class="text-dark fw-semibold">Shop Now →</a>
+                                        </div>
+                                        <img src="./img/product-12.webp" alt="Accessories" class="img-fluid"
+                                            style="max-width: 160px;">
                                     </div>
-                                    <img src="./img/product-12.webp" alt="Accessories" class="img-fluid"
-                                        style="max-width: 160px;">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </section>
 
+        <!-- Best Sellers Section -->
 
+        <section id="Best-Sellers">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="fw-bold fs-1">Best Sellers</h2>
+                    <hr class="hr-small">
+                    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                </div>
+                <div class="row g-4 my-5" data-aos="fade-up">
+                    <!-- Card 1 -->
+                    <div class="col-md-3">
+                        <div class="card position-relative border-0 bg-transparent custom-hover">
+                            <span class="badge bg-dark position-absolute top-0 start-0 m-2">LIMITED</span>
+                            <img src="./img/product-10.webp" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h6 class="text-muted mb-1">PREMIUM COLLECTION</h6>
+                                <h5 class="card-title mb-1">Mauris blandit aliquet elit</h5>
+                                <div class="mb-2 text-warning">
+                                    ★★★★☆ <span class="text-muted">(24)</span>
+                                </div>
+                                <p class="fw-bold">$189.00</p>
+                                <div class="d-flex gap-1">
+                                    <span class="rounded-circle bg-primary" style="width:15px; height:15px;"></span>
+                                    <span class="rounded-circle bg-danger" style="width:15px; height:15px;"></span>
+                                    <span class="rounded-circle bg-success" style="width:15px; height:15px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Card 2 -->
+                    <div class="col-md-3">
+                        <div class="card position-relative border-0 bg-transparent custom-hover">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">25% OFF</span>
+                            <img src="./img/product-7.webp" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h6 class="text-muted mb-1">BEST SELLERS</h6>
+                                <h5 class="card-title mb-1">Sed do eiusmod tempor</h5>
+                                <div class="mb-2 text-warning">
+                                    ★★★★☆ <span class="text-muted">(38)</span>
+                                </div>
+                                <p class="fw-bold mb-3">
+                                    <del class="text-muted me-2">$240.00</del>
+                                    $180.00
+                                </p>
+                                <div class="d-flex gap-1">
+                                    <span class="rounded-circle bg-primary" style="width:15px; height:15px;"></span>
+                                    <span class="rounded-circle bg-danger" style="width:15px; height:15px;"></span>
+                                    <span class="rounded-circle bg-success" style="width:15px; height:15px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Card 3 -->
+                    <div class="col-md-3">
+                        <div class="card border-0 bg-transparent custom-hover">
+                            <img src="./img/product-4.webp" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h6 class="text-muted mb-1">NEW ARRIVALS</h6>
+                                <h5 class="card-title mb-1">Lorem ipsum dolor sit amet</h5>
+                                <div class="mb-2 text-warning">
+                                    ★★★★☆ <span class="text-muted">(12)</span>
+                                </div>
+                                <p class="fw-bold">$95.00</p>
+                                <div class="d-flex gap-1">
+                                    <span class="rounded-circle bg-primary" style="width:15px; height:15px;"></span>
+                                    <span class="rounded-circle bg-danger" style="width:15px; height:15px;"></span>
+                                    <span class="rounded-circle bg-success" style="width:15px; height:15px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-3">
+                        <div class="card position-relative border-0 bg-transparent custom-hover">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-2">TRENDING</span>
+                            <img src="./img/product-1.webp" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h6 class="text-muted mb-1">DESIGNER SERIES</h6>
+                                <h5 class="card-title mb-1">Ut enim ad minim veniam</h5>
+                                <div class="mb-2 text-warning">
+                                    ★★★★★ <span class="text-muted">(56)</span>
+                                </div>
+                                <p class="fw-bold">$165.00</p>
+                                <div class="d-flex gap-1">
+                                    <span class="rounded-circle bg-primary" style="width:15px; height:15px;"></span>
+                                    <span class="rounded-circle bg-danger" style="width:15px; height:15px;"></span>
+                                    <span class="rounded-circle bg-success" style="width:15px; height:15px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Trendieng Section -->
+
+        <section id="trending">
+            <div class="container">
+                <div class="row">
+                    <!-- Trending Now -->
+                    <div class="col-md-4 ">
+                        <div class="bg-body-tertiary p-4 rounded-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+                            <h5 class="mb-3"><i class="bi bi-fire text-danger"></i> Trending Now</h5>
+                            <div class="d-flex mb-3 custom-hover p-2 rounded-4">
+                                <img src="./img/product-7.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Premium Leather Tote <span
+                                            class="badge bg-light text-dark border ms-1">NEW</span></h6>
+                                    <div class="text-warning">★★★★☆ (24)</div>
+                                    <strong>$87.50</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 custom-hover p-2 rounded-4">
+                                <img src="./img/product-1.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Statement Earrings</h6>
+                                    <div class="text-warning">★★★★☆ (41)</div>
+                                    <strong>$39.99</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex custom-hover p-2 rounded-4">
+                                <img src="./img/product-3.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Organic Cotton Shirt</h6>
+                                    <div class="text-warning">★★★★☆ (18)</div>
+                                    <strong>$45.00</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Best Sellers -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-body-tertiary p-4 rounded-4 mb-3">
+                            <h5 class="mb-3"><i class="bi bi-star-fill text-warning"></i> Best Sellers</h5>
+                            <div class="d-flex mb-3 custom-hover p-2 rounded-4">
+                                <img src="./img/product-4.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Slim Fit Denim <span
+                                            class="badge bg-danger text-white ms-1">-15%</span></h6>
+                                    <div class="text-warning">★★★★☆ (87)</div>
+                                    <strong>$68.00 <del class="text-muted ms-1">$80.00</del></strong>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 custom-hover p-2 rounded-4">
+                                <img src="./img/product-5.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Designer Handbag</h6>
+                                    <div class="text-warning">★★★★★ (56)</div>
+                                    <strong>$129.99</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex custom-hover p-2 rounded-4">
+                                <img src="./img/product-8.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Leather Crossbody <span
+                                            class="badge bg-warning text-dark ms-1">HOT</span></h6>
+                                    <div class="text-warning">★★★★☆ (112)</div>
+                                    <strong>$95.50</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Items -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-body-tertiary p-4 rounded-4 mb-3">
+                            <h5 class="mb-3"><i class="bi bi-star text-dark"></i> Featured Items</h5>
+                            <div class="d-flex mb-3 custom-hover p-2 rounded-4">
+                                <img src="./img/product-7.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Pleated Midi Skirt</h6>
+                                    <div class="text-warning">★★★★☆ (32)</div>
+                                    <strong>$75.00</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 custom-hover p-2 rounded-4">
+                                <img src="./img/product-12.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Geometric Earrings <span
+                                            class="badge bg-light border text-dark ms-1">LIMITED</span></h6>
+                                    <div class="text-warning">★★★★☆ (47)</div>
+                                    <strong>$42.99</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex custom-hover p-2 rounded-4">
+                                <img src="./img/product-10.webp" class="me-3 rounded trending-img" alt="Product">
+                                <div>
+                                    <h6 class="mb-1">Structured Satchel</h6>
+                                    <div class="text-warning">★★★★★ (64)</div>
+                                    <strong>$89.99</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Flash Sale Section -->
+
+        <section id="Flash-Sale" class="bg-body-tertiary">
+            <div class="container text-center justify-content-center d-flex flex-column align-items-center">
+                <div>
+                    <span class="bg-black p-3 rounded-5 text-white text-white shadow-lg" data-aos="fade-up">Limited Time
+                        <span class="fs-5 fw-bold text-white ms-2">50% OFF</span></span>
+                    <h2 style="font-size: 58px;" class="fw-bold mt-5" data-aos="fade-up">Exclusive Flash Sale</h2>
+                    <p class="fs-6 text-muted mt-4" data-aos="fade-up">Don't miss out on our biggest sale of the year.
+                        Premium quality
+                        products
+                        at
+                        <br> unbeatable prices for the next 48 hours only.
+                    </p>
+                </div>
+                <div class="d-flex justify-content-center text-center gap-4 my-5">
+                    <div class="bg-white p-3 rounded-4 shadow-sm" data-aos="flip-left" data-aos-duration="1000">
+                        <h3 class="fw-bold fs-1">152</h3>
+                        <h6>Days</h6>
+                    </div>
+                    <div class="bg-white p-3 rounded-4 shadow-sm" data-aos="flip-left" data-aos-duration="1000">
+                        <h3 class="fw-bold fs-1">13</h3>
+                        <h6>Hours</h6>
+                    </div>
+                    <div class="bg-white p-3 rounded-4 shadow-sm" data-aos="flip-left" data-aos-duration="1000">
+                        <h3 class="fw-bold fs-1">5</h3>
+                        <h6>Minutes</h6>
+                    </div>
+                    <div class="bg-white p-3 rounded-4 shadow-sm" data-aos="flip-left" data-aos-duration="000">
+                        <h3 class="fw-bold fs-1">17</h3>
+                        <h6>Seconds</h6>
+                    </div>
+                </div>
+                <div class="d-flex gap-3 mb-5">
+                    <div data-aos="fade-up">
+                        <a class="btn btn-dark p-3 shadow-sm" href="">Shop Now</a>
+                    </div>
+                    <div data-aos="fade-up">
+                        <a class="btn btn-light p-3 shadow-sm" href="">Browse Categories</a>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+
+                <div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-3">
+                        <div class="custom-hover card position-relative border-0 bg-white mb-3">
+                            <span class="badge p-2 bg-danger position-absolute top-0 start-0 m-2">-45%</span>
+                            <img src="./img/product-10.webp" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h5 class="mb-2">Smart Fitness Tracker</h5>
+                                <p class="fw-bold mb-2">
+                                    <del class="text-muted me-2">$240.00</del>
+                                    $180.00
+                                </p>
+                                <div class="mb-2 fs-5 text-warning">
+                                    ★★★★☆ <span class="text-muted fs-6">(24)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="custom-hover card position-relative border-0 bg-white mb-3">
+                            <span class="badge p-2 bg-danger position-absolute top-0 start-0 m-2">-45%</span>
+                            <img src="./img/product-8.webp" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h5 class="mb-2">Smart Fitness Tracker</h5>
+                                <p class="fw-bold mb-2">
+                                    <del class="text-muted me-2">$240.00</del>
+                                    $180.00
+                                </p>
+                                <div class="mb-2 fs-5 text-warning">
+                                    ★★★★☆ <span class="text-muted fs-6">(24)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="custom-hover card position-relative border-0 bg-white mb-3">
+                            <span class="badge p-2 bg-danger position-absolute top-0 start-0 m-2">-45%</span>
+                            <img src="./img/product-3 (1).webp" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h5 class="mb-2">Smart Fitness Tracker</h5>
+                                <p class="fw-bold mb-2">
+                                    <del class="text-muted me-2">$240.00</del>
+                                    $180.00
+                                </p>
+                                <div class="mb-2 fs-5 text-warning">
+                                    ★★★★☆ <span class="text-muted fs-6">(24)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="custom-hover card position-relative border-0 bg-white mb-3">
+                            <span class="badge bg-danger p-2 position-absolute top-0 start-0 m-2">-45%</span>
+                            <img src="./img/product-4.webp" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h5 class="mb-2">Smart Fitness Tracker</h5>
+                                <p class="fw-bold mb-2">
+                                    <del class="text-muted me-2">$240.00</del>
+                                    $180.00
+                                </p>
+                                <div class="mb-2 fs-5 text-warning">
+                                    ★★★★☆ <span class="text-muted fs-6">(24)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
 
+    <!-- Footer Section -->
 
+    <footer class="bg-black pt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!-- Company Info -->
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-3 text-white">NiceShop</h4>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh
+                        vehicula, facilisis magnaut.</p>
+                    <h5 class="mt-4 text-white">Connect With Us</h5>
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i
+                                class="bi bi-pinterest"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i
+                                class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Shop Links -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold text-white">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">→ New Arrivals</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Bestsellers</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Women's Clothing</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Men's Clothing</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Accessories</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Sale</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support Links -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold text-white">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Help Center</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Order Status</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Shipping Info</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Size Guide</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">→ Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 text-secondary">
+                    <h5 class="fw-bold text-white">Contact Information</h5>
+                    <p><i class="bi text-white bi-geo-alt-fill me-2"></i>123 Fashion Street, New York, NY 10001</p>
+                    <p><i class="bi text-white bi-telephone-fill me-2"></i>+1 (555) 123-4567</p>
+                    <p><i class="bi text-white bi-envelope-fill me-2"></i>hello@example.com</p>
+                    <p><i class="bi text-white bi-clock-fill me-2"></i>Monday-Friday: 9am-6pm<br>Saturday:10am-4pm<br>Sunday:Closed</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="btn btn-dark"><i class="bi bi-apple"></i> App Store</a>
+                        <a href="#" class="btn btn-dark"><i class="bi bi-google-play"></i> Google Play</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="text-secondary my-3 opacity-100">
+        <!-- Bottom Footer -->
+
+        <div class="container">
+            <div class="row text-secondary">
+                <div class="col-md-6">
+                    <p class="fw-bold text-white">Designed by <span class="text-secondary">Ahtisham Ahmad</span></p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <a href="#" class="text-secondary me-3 text-decoration-none">Terms</a>
+                    <a href="#" class="text-secondary me-3 text-decoration-none">Privacy</a>
+                    <a href="#" class="text-secondary text-decoration-none">Cookies</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- Js Section -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
